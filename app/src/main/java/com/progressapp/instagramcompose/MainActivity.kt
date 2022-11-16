@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.progressapp.instagramcompose.feeds.FeedScreen
 import com.progressapp.instagramcompose.profile.ProfileScreen
 import com.progressapp.instagramcompose.ui.theme.InstagramComposeTheme
 
@@ -23,7 +24,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    ProfileScreen()
+                    //ProfileScreen()
+                    FeedScreen()
                 }
             }
         }
