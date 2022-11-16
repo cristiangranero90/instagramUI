@@ -14,11 +14,13 @@ import com.progressapp.instagramcompose.profile.components.ProfileStoryHighlight
 @Preview(showBackground = true)
 @Composable
 fun ProfileScreenPreview(){
-    ProfileScreen()
+    ProfileScreen({})
 }
 
 @Composable
-fun ProfileScreen() {
+fun ProfileScreen(
+    backArrow: () -> Unit,
+) {
     val user = User(
         username = "cristian_granero",
         profileImageUrl = "https://via.placeholder.com/200",
@@ -61,7 +63,7 @@ fun ProfileScreen() {
 
     Column {
 
-        ProfileHeader({}, {}, {}, user.username)
+        ProfileHeader(backArrow, {}, {}, user.username)
 
         ProfileInformation(
             imageUrl = user.profileImageUrl,
