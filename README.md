@@ -1,1 +1,1 @@
-Solo UI de Instagram
+Instagram UI for Jetpack Compose practice
